@@ -26,9 +26,11 @@ function Moo(){
     const text = document.getElementById("inputText");
     text.value = text.value.toUpperCase();
 
-    var str = text;
-    var parts = str.split(" ");  // ["How", "are", "you?"]
-    str = parts.join("_");       // "How_are_you?"
+    var str = text.value;
+    var parts = str.split(".");  // ["How", "are", "you?"]
+    str = parts.join("-Moo");       // "How_are_you?"
+    
+    text.value = str;
 }
 
 function alertTest(){
